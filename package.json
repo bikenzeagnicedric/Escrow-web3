@@ -1,0 +1,43 @@
+{
+  "name": "smart-escrow-web3",
+  "version": "1.0.0",
+  "description": "Decentralized Smart Escrow Platform with dispute resolution and arbitration",
+  "private": true,
+  "workspaces": [
+    "contracts",
+    "backend",
+    "client"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm run install:contracts && npm run install:backend && npm run install:client",
+    "install:contracts": "cd contracts && npm install",
+    "install:backend": "cd backend && npm install",
+    "install:client": "cd client && npm install",
+    "dev:contracts": "cd contracts && npm run node",
+    "dev:backend": "cd backend && npm run start:dev",
+    "dev:client": "cd client && npm run dev",
+    "test:contracts": "cd contracts && npm run test",
+    "test:backend": "cd backend && npm run test",
+    "test:client": "cd client && npm run test",
+    "build:contracts": "cd contracts && npm run compile",
+    "build:backend": "cd backend && npm run build",
+    "build:client": "cd client && npm run build",
+    "deploy:contracts": "cd contracts && npm run deploy"
+  },
+  "keywords": [
+    "web3",
+    "escrow",
+    "blockchain",
+    "ethereum",
+    "polygon",
+    "solidity",
+    "nestjs",
+    "nextjs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
