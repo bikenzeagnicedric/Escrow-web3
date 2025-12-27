@@ -151,7 +151,7 @@ export default function Home() {
             {/* Footer */}
             <footer className="border-t mt-20">
                 <div className="container mx-auto px-4 py-8 text-center text-muted-foreground">
-                    <p>© 2024 Smart Escrow. Built with ❤️ on the blockchain.</p>
+                    <p>© 2025 Smart Escrow. Built by BNC on the blockchain.</p>
                 </div>
             </footer>
         </div>

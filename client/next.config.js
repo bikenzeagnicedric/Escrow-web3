@@ -4,6 +4,12 @@ const nextConfig = {
     webpack: (config) => {
         config.resolve.fallback = { fs: false, net: false, tls: false };
         config.externals.push('pino-pretty', 'lokijs', 'encoding');
+        // Ignore React Native modules
+        config.resolve.alias = {
+            ...config.resolve.alias,
+            'react-native$': 'react-native-web',
+            '@react-native-async-storage/async-storage': false,
+        };
         return config;
     },
 };
